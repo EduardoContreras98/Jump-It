@@ -1,0 +1,298 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    :root{
+    --black-SmoothCriminal:#141414;
+    --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+    --black-ImNotTheOnlyOne:#222;
+    --white-AllOfMe:#EBEBEB;
+    --violet-ColdHeart:#49408C;
+    --violet-BackInBlack:#71706F;
+    --violet-AllTooWell:#6f65b844;
+    --violet-TheMotto:#602c82a4;
+    --violet-NovemberRain:#71706F;
+    --violet-MyUniverse: #a9a1e0;
+    --violet-Levitating: #6F65B8;
+    --cian-JustLookUp:#49a09da8;
+    --gray-TheScientist:#71706F;
+    --gray-Up:#6f65b844;
+    --gray-Creep:#a9a1e0;
+    --cian-TeenageDream:#4568DC;
+    --pink-CaliforniaGirls:#B06AB3; 
+    --violet-NotGivingYouUp:#6f65b8a6;
+
+    --blue-Berry: #1058ff;
+    --blue-BamBam: #5094ff;
+    --green-Apple: #60ca5b;
+    --pink-Fancy: #f97f7e;
+    --pink-TheFeels: #ffa68b;
+    --orange-Juice: #dc8200;
+    --orange-Giants: #fb9c40;
+    --red-LoveStory: #b56c4c;
+    --red-YouBelongWithMe: #d28b75;
+    --yellow-Minero: #eae8ad;
+    --white-Diamond: #e5e5e5;
+
+
+      }
+
+
+    /* //////////////////////////////////////////////////////    HEADER */
+
+    body {
+        width: 100%;
+        color: var(--white-Diamond);
+        background: linear-gradient(45deg,var(--red-LoveStory), var(--orange-Juice), var(--pink-Fancy),var(--blue-Berry), var(--green-Apple));
+		background-size: 400% 400%;
+		position: relative;
+		animation: cambiar 10s ease-in-out infinite;
+    
+    }
+
+    @keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+
+    nav{
+        text-align: right;
+        padding: 30px 50px 0 0;
+        
+    }
+
+    nav > a{
+        color:var(--white-AllOfMe);
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    nav > b{
+        color: var(--white-AllOfMe);
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    main .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h2{
+        font-size: 60px;
+        font-weight: 300;
+        color:var(--white-AllOfMe);
+    }
+
+    .textos-header h3{
+        font-size: 25px;
+        font-weight: 300;
+        color:var(--white-AllOfMe);
+    }
+
+    .TituloJump{
+        font-family: 'Pulang';
+        src: url('recursos/fonts/Pulang.ttf') format('truetype');
+        font-size: 60px;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+        animation-iteration-count: infinite;
+    }
+
+
+    /* ////////////////////////////////////////////////////// ANIMACION JUMP */
+
+      
+    @keyframes bounce {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(0, 10px, 0);
+        }
+    }
+   
+
+    /* //////////////////////////////////////////////////////   BODY */
+
+    .contenedor{
+        margin:auto;
+        padding: 60px 0;
+        width: 90%;
+        max-width: 1000px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .botonesInicio{
+        width: 90%;
+        max-width: 1000px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .botonesInicio>button{
+        background: var(--violet-ColdHeart);        
+        border: none;
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+        color:  var(--white-AllOfMe);
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .botonesInicio>a{
+        background: var(--violet-ColdHeart);        
+        border: none;
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color:  var(--white-AllOfMe);
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      
+
+       /* //////////////////////////////////////////////////////    FOOTER */
+
+ .barraContenedor{
+  width: 100%;
+  height: 20px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+#footer{
+  
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-footer > h4{
+  color:var(--white-AllOfMe);
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.imagen-redes-sociales{
+  height: 80px;
+  text-align: center;
+}
+
+.contenedor-footer > h3{
+  color:var(--white-AllOfMe);
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+
+
+     
+/* //////////////////////////////////////////////////////    REDUCCION */
+
+@media screen and (max-width: 700px){
+    :root{
+        --margenes: 30px;
+        --navText: 20px;
+      }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+      --espacios-contenido: 25px;
+      --navText: 15px;
+    }
+
+    .cont-noticias{
+      width: 85%;
+    }
+
+  }
+
+
+
+
+/* //////////////////////////////////////////////////////    PELOTA */
+
+
+
+  .box b {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3673cf;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+    position: absolute;
+    -webkit-animation: moveX 5.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+    -moz-animation: moveX 5.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+    -o-animation: moveX 5.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+    animation: moveX 5.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+  }
+
+  
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 95%; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 95%; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 95%; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 95%; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 95%; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 95%; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 95%; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 95%; }
+}

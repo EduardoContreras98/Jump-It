@@ -1,0 +1,48 @@
+
+
+#RuletaModal_Canvas{
+
+    background: var(--violet-ColdHeart);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,var(--pink-Bubblepop), var(--violet-TheBaddest), var(--cian-DrumGoDum));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,var(--pink-Bubblepop), var(--violet-TheBaddest), var(--cian-DrumGoDum));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+}
+
+
+
+#Girar{
+        color: var(--white-AllOfMe);
+        border-color: 10px var(--white-AllOfMe);
+        background: linear-gradient(45deg,var(--red-LoveStory), var(--orange-Juice), var(--pink-Fancy),var(--blue-Berry), var(--green-Apple));
+        display: block;
+        padding: .5em 1em;
+        width: 20em;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 10px;
+}
+
+#Ruleta{
+    border-radius: 8px;
+}
+
+#RuletaCanvas{
+    display: block;
+    left: -100px;
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+      
+      .NotiCard{
+          width: 100%;
+
+      }
+
+
+ }

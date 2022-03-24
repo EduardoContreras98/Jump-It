@@ -1,0 +1,85 @@
+
+:root{
+    --black-SmoothCriminal:#141414;
+    --white-AllOfMe:#EBEBEB;
+    --violet-ColdHeart:#49408C;
+    --violet-BackInBlack:#71706F;
+    --violet-AllTooWell:#6f65b844;
+    --violet-TheMotto:#602c82a4;
+    --violet-NovemberRain:#71706F;
+    --cian-JustLookUp:#49a09da8;
+    --gray-TheScientist:#71706F;
+    --gray-Up:#6f65b844;
+    --cian-TeenageDream:#4568DC;
+    --pink-CaliforniaGirls:#B06AB3; 
+  }
+
+
+/* ////////////////////////    VENTANA MODAL */
+
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: var(--violet-AllTooWell);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+.modal{
+    background: linear-gradient(0deg,var(--black-ImNotTheOnlyOne) 70%,  var(--violet-ColdHeart) 30%);
+    width: 600px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.modal_cerrar{
+    background: linear-gradient(to right, var(--pink-CaliforniaGirls), var(--cian-TeenageDream));
+    position: absolute;
+    right: 20px;
+    color: var(--white-AllOfMe) ;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal_titulo{
+    color: var(--white-AllOfMe);
+    font-size: 40px;
+}
+.modal_mensaje{            
+   padding: 10px 20px;
+}
+.modal_botones{      
+    width: 100%;    
+   background: var(--black-ImNotTheOnlyOne);
+   border-top: var(--white-AllOfMe) 2px;
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+
+}
+
+.modal_botones > a{
+    color: var(--white-AllOfMe);
+    text-decoration: none;
+    background: linear-gradient(to right, var(--pink-CaliforniaGirls), var(--cian-TeenageDream));
+    width: 10em;
+    border-radius: 5px;
+    text-align: center;
+
+}

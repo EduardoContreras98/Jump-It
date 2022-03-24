@@ -1,0 +1,34 @@
+
+
+:root{
+    --black-SmoothCriminal:#141414;
+        --white-AllOfMe:#EBEBEB;
+        --violet-ColdHeart:#49408C;
+        --violet-BackInBlack:#71706F;
+        --violet-AllTooWell:#6f65b844;
+        --violet-TheMotto:#602c82a4;
+        --violet-NovemberRain:#71706F;
+        --cian-JustLookUp:#49a09da8;
+        --gray-TheScientist:#71706F;
+        --gray-Up:#6f65b844;
+        --cian-TeenageDream:#4568DC;
+        --pink-CaliforniaGirls:#B06AB3; 
+
+  }
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../recursos/imagenes/loading_01.svg') 50% 50% no-repeat var(--violet-ColdHeart);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,var(--violet-TheMotto), var(--cian-JustLookUp)), url('../recursos/imagenes/loading_01.svg') 50% 50% no-repeat;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--violet-TheMotto),var(--cian-JustLookUp)), url('../recursos/imagenes/loading_01.svg') 50% 50% no-repeat;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    opacity: 100%;
+}

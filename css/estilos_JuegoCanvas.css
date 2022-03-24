@@ -1,0 +1,110 @@
+    
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    :root{
+    --black-SmoothCriminal:#141414;
+    --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+    --black-ImNotTheOnlyOne:#222;
+    --white-AllOfMe:#EBEBEB;
+    --violet-ColdHeart:#49408C;
+    --violet-BackInBlack:#71706F;
+    --violet-AllTooWell:#6f65b844;
+    --violet-TheMotto:#602c82a4;
+    --violet-NovemberRain:#71706F;
+    --violet-MyUniverse: #a9a1e0;
+    --violet-Levitating: #6F65B8;
+    --cian-JustLookUp:#49a09da8;
+    --gray-TheScientist:#71706F;
+    --gray-Up:#6f65b844;
+    --gray-Creep:#a9a1e0;
+    --cian-TeenageDream:#4568DC;
+    --pink-CaliforniaGirls:#B06AB3; 
+    --violet-NotGivingYouUp:#6f65b8a6;
+
+    --blue-Shivers: #0c3fb6;
+    --blue-Berry: #1058ff;
+    --blue-BamBam: #5094ff;
+    --green-Toxic: #25e91b;
+    --green-Apple: #60ca5b;
+    --green-Peace: #219e1a;
+    --pink-Fancy: #f97f7e;
+    --pink-TheFeels: #ffa68b;
+    --orange-Juice: #dc8200;
+    --orange-Giants: #fb9c40;
+    --red-LoveStory: #b56c4c;
+    --red-YouBelongWithMe: #d28b75;
+    --yellow-Minero: #eae8ad;
+    --white-Diamond: #e5e5e5;
+
+    --color01: #D38312;
+    --color02: #B06AB3;
+
+
+      }
+
+    
+    /* //////////////////////////////////////////////////////   BODY */
+
+    body{
+        width: 100%;
+        background: linear-gradient(to right,var(--color01), var(--color02),var(--color01));
+    }
+
+    
+    .contenedor{
+        display: table;
+        padding: 0;
+        
+       
+    }
+
+    .canvas {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      #scene-section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+      }
+
+
+/* //////////////////////////////////////////////// MODALES MENUS */
+
+.btnModalMenu{
+  color: var(--white-AllOfMe);
+  background: var(--violet-ColdHeart);
+  width: 6em;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+
+     
+/* ////////////////////////    REDUCCION PAGINA */
+
+
+@media only screen and (max-width: 500px){
+
+    :root{
+        --espacios-contenido: 25px;
+      }
+
+      
+      .NotiCard{
+          width: 100%;
+
+      }
+
+
+ }
+

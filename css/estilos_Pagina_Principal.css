@@ -1,0 +1,220 @@
+
+    
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    :root{
+    --black-SmoothCriminal:#141414;
+    --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+    --black-ImNotTheOnlyOne:#222;
+    --white-AllOfMe:#EBEBEB;
+    --violet-ColdHeart:#49408C;
+    --violet-BackInBlack:#71706F;
+    --violet-AllTooWell:#6f65b844;
+    --violet-TheMotto:#602c82a4;
+    --violet-NovemberRain:#71706F;
+    --violet-MyUniverse: #a9a1e0;
+    --violet-Levitating: #6F65B8;
+    --cian-JustLookUp:#49a09da8;
+    --gray-TheScientist:#71706F;
+    --gray-Up:#6f65b844;
+    --gray-Creep:#a9a1e0;
+    --cian-TeenageDream:#4568DC;
+    --pink-CaliforniaGirls:#B06AB3; 
+    --violet-NotGivingYouUp:#6f65b8a6;
+
+    --blue-Shivers: #0c3fb6;
+    --blue-Berry: #1058ff;
+    --blue-BamBam: #5094ff;
+    --green-Toxic: #25e91b;
+    --green-Apple: #60ca5b;
+    --green-Peace: #219e1a;
+    --pink-Fancy: #f97f7e;
+    --pink-TheFeels: #ffa68b;
+    --orange-Juice: #dc8200;
+    --orange-Giants: #fb9c40;
+    --red-LoveStory: #b56c4c;
+    --red-YouBelongWithMe: #d28b75;
+    --yellow-Minero: #eae8ad;
+    --white-Diamond: #e5e5e5;
+
+    --color01: #D38312;
+    --color02: #B06AB3;
+
+
+      }
+
+    
+    /* //////////////////////////////////////////////////////   BODY */
+
+    body{
+        width: 100%;
+        background: linear-gradient(to right,var(--color01), var(--color02));
+    }
+
+    
+    .contenedor{
+        padding:80px 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+       
+    }
+
+    .TituloContenedor{
+        text-align: center;
+        color: var(--white-AllOfMe);
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: var(--white-AllOfMe);
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 700;
+    }
+    
+    
+    .titulo{
+        color: var(--violet-ColdHeart);
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+
+    
+.noticiasCard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.NotiCard{
+    width: 31%;
+    overflow: hidden;
+    margin-bottom: var(--espacios-contenido);
+}
+
+.card-header{
+    background-color: var(--cian-TeenageDream);
+    
+}
+
+.card-link{
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#modo01{
+    background: linear-gradient(var(--blue-Berry), var(--blue-BamBam));
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+#modo01:hover {
+    box-shadow: 0px 8px 30px var(--blue-Berry);
+    cursor: pointer;
+}
+
+#modo01-Titulo{
+    background: var(--blue-Berry);
+    color: var(--white-AllOfMe);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+#modo02{
+    background: linear-gradient(var(--green-Toxic), var(--green-Apple));
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+#modo02:hover {
+    box-shadow: 0px 8px 30px var(--green-Toxic);
+    cursor: pointer;
+}
+
+#modo02-Titulo{
+    background: var(--green-Apple);
+    color: var(--white-AllOfMe);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+#modo03{
+    background: linear-gradient(var(--pink-Fancy), var(--pink-TheFeels));
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+#modo03:hover {
+    box-shadow: 0px 8px 30px var(--pink-Fancy);
+    cursor: pointer;
+}
+
+#modo03-Titulo{
+    background: var(--pink-CaliforniaGirls);
+    color: var(--white-AllOfMe);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+
+.botonesInicio{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.botonesInicio>button{
+    background: var(--violet-ColdHeart);        
+    border: none;
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .botonesInicio>button:hover{
+    box-shadow: 0px 8px 30px var(--violet-ColdHeart);
+}
+
+     
+/* ////////////////////////    REDUCCION PAGINA */
+
+
+@media only screen and (max-width: 500px){
+
+    :root{
+        --espacios-contenido: 25px;
+      }
+
+      
+      .NotiCard{
+          width: 100%;
+
+      }
+
+
+ }
+

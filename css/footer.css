@@ -1,0 +1,93 @@
+ 
+ 
+     :root{
+        --black-SmoothCriminal:#141414;
+        --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+        --black-ImNotTheOnlyOne:#222;
+        --white-AllOfMe:#EBEBEB;
+        --violet-ColdHeart:#49408C;
+        --violet-BackInBlack:#71706F;
+        --violet-AllTooWell:#6f65b844;
+        --violet-TheMotto:#602c82a4;
+        --violet-NovemberRain:#71706F;
+        --violet-MyUniverse: #a9a1e0;
+        --violet-Levitating: #6F65B8;
+        --cian-JustLookUp:#49a09da8;
+        --gray-TheScientist:#71706F;
+        --gray-Up:#6f65b844;
+        --gray-Creep:#a9a1e0;
+        --cian-TeenageDream:#4568DC;
+        --pink-CaliforniaGirls:#B06AB3; 
+        --violet-NotGivingYouUp:#6f65b8a6;
+    
+        --blue-Berry: #1058ff;
+        --blue-BamBam: #5094ff;
+        --green-Apple: #60ca5b;
+        --pink-Fancy: #f97f7e;
+        --pink-TheFeels: #ffa68b;
+        --orange-Juice: #dc8200;
+        --orange-Giants: #fb9c40;
+        --red-LoveStory: #b56c4c;
+        --red-YouBelongWithMe: #d28b75;
+        --yellow-Minero: #eae8ad;
+        --white-Diamond: #e5e5e5;
+    
+    
+          }
+    
+ 
+ 
+ 
+ /* //////////////////////////////////////////////////////    FOOTER */
+
+ .barraContenedor{
+    width: 100%;
+    height: 20px;
+    background: var(--violet-ColdHeart);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,var(--violet-TheMotto), var(--cian-JustLookUp)), url(../recursos/imagenes/galaxy.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--violet-TheMotto),var(--cian-JustLookUp)), url(../recursos/imagenes/galaxy.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+
+footer{
+    
+    margin: auto;
+    overflow: hidden;
+    /*background: var(--violet-ColdHeart);*/
+}
+
+.contenedor-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor-footer > h4{
+    color:var(--white-AllOfMe);
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.contenedor-footer > h3{
+    color:var(--white-AllOfMe);
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+

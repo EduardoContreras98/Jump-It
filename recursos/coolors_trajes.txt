@@ -1,0 +1,14 @@
+
+morado --violet-ColdHeart:#49408C;
+azul  --blue-Shivers: #0c3fb6;
+negro --black-ImNotTheOnlyOne:#222;
+verde --green-Peace: #219e1a;
+amarillo --yellow-Minero: #e0dd0b;
+naranja --orange-Juice: #dc8200;
+rosa --pink-Fancy: #f97f7e;
+rojo --red-Velvet: #be1010;
+gris --gray-Creep:#a9a1e0;
+blanco --white-AllOfMe:#EBEBEB;
+
+
+fecha | usuario | puntuación

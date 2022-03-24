@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    :root{
+        --black-SmoothCriminal:#141414;
+        --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+        --black-ImNotTheOnlyOne:#222;
+        --white-AllOfMe:#EBEBEB;
+        --violet-ColdHeart:#49408C;
+        --violet-BackInBlack:#71706F;
+        --violet-AllTooWell:#6f65b844;
+        --violet-TheMotto:#602c82a4;
+        --violet-NovemberRain:#71706F;
+        --violet-MyUniverse: #a9a1e0;
+        --violet-Levitating: #6F65B8;
+        --cian-JustLookUp:#49a09da8;
+        --gray-TheScientist:#71706F;
+        --gray-Up:#6f65b844;
+        --gray-Creep:#a9a1e0;
+        --cian-TeenageDream:#4568DC;
+        --pink-CaliforniaGirls:#B06AB3; 
+        --violet-NotGivingYouUp:#6f65b8a6;
+    
+        --blue-Shivers: #0c3fb6;
+        --blue-Berry: #1058ff;
+        --blue-BamBam: #5094ff;
+        --green-Toxic: #25e91b;
+        --green-Apple: #60ca5b;
+        --pink-Fancy: #f97f7e;
+        --pink-TheFeels: #ffa68b;
+        --orange-Juice: #dc8200;
+        --orange-Giants: #fb9c40;
+        --red-Velvet: #be1010;
+        --red-LoveStory: #b56c4c;
+        --red-YouBelongWithMe: #d28b75;
+        --yellow-Minero: #e0dd0b;
+        --white-Diamond: #e5e5e5;
+    
+        --pink-Bubblepop: #aa4b6b;
+        --violet-TheBaddest: #6b6b83;
+        --cian-DrumGoDum: #3b8d99;
+
+        --color01: #D38312;
+        --color02: #B06AB3;
+    
+    
+          }
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+
+
+        background: var(--violet-ColdHeart);
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,var(--violet-TheMotto), --black-SmoothCriminal);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, var(--violet-TheMotto),var(--black-SmoothCriminal));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    button{
+        background: var(--violet-ColdHeart);        
+        border: none;
+        display: block;
+        width: 19em;
+        margin: 10px auto;
+        color:  var(--white-AllOfMe);
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        color: var(--violet-ColdHeart);
+    }
+
+    form{
+        background:  var(--white-AllOfMe);
+        padding: 25px 30px;
+        box-shadow: 0 0 6px 0  var(--white-AllOfMe);
+        border-radius: 8px;
+    }
+
+    .grupo{
+        position: relative;
+        margin: 10px ;
+    }
+
+    input{
+        background: none;
+        color: var(--black-SmoothCriminal);
+        font-size: 16px;
+        padding: 15px 5px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--gray-Up);
+    }
+
+    input:focus{ 
+        outline: none;
+        color: var(--black-SmoothCriminal);
+    }
+
+ 
+
+  .datos-form{
+        color: var(--gray-TheScientist);
+        font-size: 18px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: var(--gray-TheScientist);
+    }
+
+    h4{
+        color: var(--gray-TheScientist);
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        left: 5px;
+        top: -10px;
+    }
+ 
+    .foto-form {     
+        text-align: center;
+        color: var(--white-AllOfMe);
+        background-color: var(--gray-Up);
+        display: block;
+        padding: .5em 1em;
+        width: 20em;
+        text-align: center;
+    }
+     
+   
+
+    input[type="file"] {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+    img{
+    text-align: center;
+    width: 265px;
+    height: 265px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+
+  .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, var(--pink-CaliforniaGirls), var(--cian-TeenageDream));
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+/* ///////////////////////////////////// Pagina Registro*/
+
+
+/* ///////////////////////////////////// Pagina Iniciar Sesion*/
+
+
+.boton-iniciarsesion{
+    background: var(--violet-ColdHeart);        
+    border: none;
+    display: block;
+    width: 19em;
+    margin: 10px auto;
+    color: var(--white-AllOfMe);
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.boton-crearcuentaIniciarSesion{
+    color: var(--gray-TheScientist);
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+
+
+/* ///////////////////////////////////// Pagina Iniciar Sesion Invitado*/
+
+.grupo-reglas p{
+    color: var(--black-SmoothCriminal);
+    position:static;
+    font-size: 18px;
+    font-weight: 250;
+    text-decoration: none;
+    text-align: justify;
+    width: 16em;
+}
+
+h2{
+    color: #141414;
+    font-weight: 600;
+    text-align: center;
+}
+
+.boton-crearcuentaInvitado{
+    color: var(--gray-TheScientist);
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 0px 0px 60px
+}
+
+/* ///////////////////////////////////// Pagina Buscar*/
+
+h5{
+    color: var(--gray-TheScientist);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.categorias-select{
+    position: relative;
+    width: 300px;
+    top: 8px;
+
+}
+
+#AgregarEtiqueta{
+    text-align: center;
+    color: var(--white-AllOfMe);
+    background: var(--violet-NotGivingYouUp);
+    padding: .5em 1em;
+    width: 15em;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#EliminarEtiqueta{
+    text-align: center;
+    color: var(--white-AllOfMe);
+    background: var(--violet-NotGivingYouUp);
+    padding: .5em 1em;
+    width: 15em;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ///////////////////////////////////// PAGINA AGREGAR EDITOR*/
+
+
+.bodyCrearNoticia{
+    height: 1800px;
+}
+
+.TipoAdmin-select{
+    position: relative;
+    width: 260px;
+    top: 8px;
+
+}
+
+.VideoFoto-Grupo{
+    width: 320px;
+}
+
+video{
+    width:100%;
+    background:var(--black-SmellsLikeTeenSpirit);
+    }
+
+img{
+    width:100%;
+    background:var(--black-SmellsLikeTeenSpirit);
+}
+
+#CarruselVideoPrev{
+    height: 250px;
+}
+
+#CarruselVideoNext{
+    height: 250px;
+}
+
+#CarruselImgPrev{
+    height: 250px;
+}
+
+#CarruselImgNext{
+    height: 250px;
+}
+
+/* ///////////////////////////////////// PAGINA AGREGAR SECCION*/
+
+#Color{
+    height: 3em;
+
+}
+
+
+ /* //////////////////////////////////////////////////////   MODAL MODO SOLO */
+
+ #bodySala{
+
+    background: var(--violet-ColdHeart);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,var(--pink-Bubblepop), var(--violet-TheBaddest), var(--cian-DrumGoDum));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,var(--pink-Bubblepop), var(--violet-TheBaddest), var(--cian-DrumGoDum));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 50px;
+
+ }
+
+
+ .jugadorList{
+
+    display:flex;
+    justify-content: left;
+ }
+
+
+.JugadorListColor{
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: var(--white-AllOfMe);
+    font-size: 0px;
+    margin-left: 5px;
+}
+
+.jugadorList >h3{
+    margin: auto;
+}
+
+.noticiasCard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.NotiCard{
+    width: 48%;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+#Girar{
+        color: var(--white-AllOfMe);
+        border-color: 10px var(--white-AllOfMe);
+        background: linear-gradient(45deg,var(--red-LoveStory), var(--orange-Juice), var(--pink-Fancy),var(--blue-Berry), var(--green-Apple));
+        display: block;
+        padding: .5em 1em;
+        width: 20em;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 10px;
+}
+
+#Ruleta{
+    
+    
+    border-radius: 8px;
+}
+
+
+@media only screen and (max-width: 500px){
+
+      
+      .NotiCard{
+          width: 100%;
+
+      }
+
+
+ }

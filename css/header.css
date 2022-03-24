@@ -1,0 +1,147 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    :root{
+    --black-SmoothCriminal:#141414;
+    --black-SmellsLikeTeenSpirit:rgb(0, 0, 0);
+    --black-ImNotTheOnlyOne:#222;
+    --white-AllOfMe:#EBEBEB;
+    --violet-ColdHeart:#49408C;
+    --violet-BackInBlack:#71706F;
+    --violet-AllTooWell:#6f65b844;
+    --violet-TheMotto:#602c82a4;
+    --violet-NovemberRain:#71706F;
+    --violet-MyUniverse: #a9a1e0;
+    --violet-Levitating: #6F65B8;
+    --cian-JustLookUp:#49a09da8;
+    --gray-TheScientist:#71706F;
+    --gray-Up:#6f65b844;
+    --gray-Creep:#a9a1e0;
+    --cian-TeenageDream:#4568DC;
+    --pink-CaliforniaGirls:#B06AB3; 
+    --violet-NotGivingYouUp:#6f65b8a6;
+
+    --blue-Berry: #1058ff;
+    --blue-BamBam: #5094ff;
+    --green-Apple: #60ca5b;
+    --pink-Fancy: #f97f7e;
+    --pink-TheFeels: #ffa68b;
+    --orange-Juice: #dc8200;
+    --orange-Giants: #fb9c40;
+    --red-LoveStory: #b56c4c;
+    --red-YouBelongWithMe: #d28b75;
+    --yellow-Minero: #eae8ad;
+    --white-Diamond: #e5e5e5;
+
+
+      }
+
+
+    /* //////////////////////////////////////////////////////    HEADER */
+
+
+
+    @keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+
+    nav{
+        text-align: right;
+        padding: 30px 50px 0 0;
+        /*background: var(--violet-ColdHeart);*/
+        
+    }
+
+    .nav-menu > a{
+        color:var(--white-AllOfMe);
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .nav-menu > b{
+        color: var(--white-AllOfMe);
+        font-size: 22px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .nav-menu > a:hover {
+        color:var(--white-AllOfMe);
+        background-color: var(--violet-ColdHeart); 
+        box-shadow: 0px 8px 15px var(--violet-ColdHeart);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    
+    .nav-menu > abbr:hover {
+        color:var(--white-AllOfMe);
+        background-color: var(--violet-ColdHeart); 
+        box-shadow: 0px 8px 30px var(--violet-ColdHeart);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .TituloJump{
+        font-family: 'Pulang';
+        src: url('recursos/fonts/Pulang.ttf') format('truetype');
+        font-size: 30px;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+        animation-iteration-count: infinite;
+        color: var(--white-AllOfMe);
+        position: absolute;
+        left: 2%;
+        top: 25px;
+        
+    }
+
+   
+
+      
+    @keyframes bounce {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(0, 10px, 0);
+        }
+    }
+
+     /* ////////////////////////////////////////////////////// MODAL CLOSE */
+
+     .modal-body{
+        text-align: center;
+     }
+     
+    #modalCloseFooter{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #btnCerrarSesión{
+        color: var(--white-AllOfMe);
+        background: var(--violet-ColdHeart);
+        border-radius: 5px;
+        text-align: center;
+    
+    }
+    
+    #btnCerrarSesión > a{
+        color: var(--white-AllOfMe);
+        background: var(--violet-ColdHeart);
+        width: 10em;
+        text-decoration: none;
+        text-align: center;
+    
+    }
