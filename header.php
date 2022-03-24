@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  $UsuarioActivo = $_SESSION['Usuario'];
+?>
 <div class="loader"></div>
 
         <header>
@@ -7,7 +11,7 @@
                 <b href="#" >|</b>
                 <a data-bs-toggle="modal" data-bs-target="#RuletaModal" class="btn-header">ඞ </a>
                 <b href="#" >|</b>
-                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="enlace-ModificarDatos" class="btn-header">AryMistery</a>
+                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="enlace-ModificarDatos" class="btn-header"><?php echo $UsuarioActivo ?></a>
                 <b href="#" >|</b>
                 <abbr title="Cerrar Sesión" id="CerrarSesionModal"><a class="categoria" id="CerrarSesionCategoria"><img data-bs-toggle="modal" data-bs-target="#exampleModal" src="recursos/imagenes/iconos/x-circle-solid-24.png"/></a></abbr>
                 <br><br>
@@ -28,7 +32,7 @@
         Te vamos a extrañar :c
       </div>
       <div class="modal-footer" id="modalCloseFooter">
-        <button type="button" class="btn btn-primary" id="btnCerrarSesión"><a href="Index.php">Cerrar Sesión</a></button>
+        <button type="button" class="btn btn-primary" id="btnCerrarSesión"><a href="sesiones/cerrar_session.php">Cerrar Sesión</a></button>
       </div>
     </div>
   </div>

@@ -18,7 +18,7 @@ $(document).ready(function() {
 
         } else
         {
-            alert("Contraseña no valida: Recuerda que la contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco.");
+            alert("Contraseña no valida: Recuerda que la contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 minuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco.");
             document.getElementById('contraseña').value = ""
         }
     }
@@ -51,7 +51,7 @@ $(document).ready(function() {
 
         } else
         {
-            alert("Contraseña no valida: Recuerda que la contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco.");
+            alert("Contraseña no valida: Recuerda que la contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 minuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco.");
             document.getElementById('confirmarcontraseña').value = ""
         }
     }

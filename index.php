@@ -124,7 +124,7 @@
                 </div>
                 <br>
                 <div class="grupo">
-                    <input type="text" name="R_Password" id="contraseña"  title= "La contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco" onclick="ContraseñaOnclick()" required>
+                    <input type="text" name="R_Password" id="contraseña"  title= "La contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 minuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco" onclick="ContraseñaOnclick()" required>
                     <span class="barra"></span>
                     <label class="datos-form" for="">Contraseña</label>
                 </div>

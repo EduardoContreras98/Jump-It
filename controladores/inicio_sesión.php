@@ -1,11 +1,17 @@
 <?php
     include_once 'configuración.php';
+    include_once '../modelos/usuario.php';
+    include_once '../dtos/usuario.php';
 
+    session_start();
     $User = $_POST['L_User'];
     $Password = $_POST['L_Password'];
-
-    //VALIDACIONES DE DATOS
-    if($User == "Edu0498" && $Password == "Edu.98pwd"){
+    
+    $Sesion = new DtoUsuario();
+    $usuario = new Usuario('', $User, '', $Password);
+    $Sesion->IniciarSesion($usuario);
+    if(!empty($usuario->getEmail())){
+        $_SESSION['Usuario'] = $usuario->getUsuario();
         echo '<script type = "text/javascript">'
         . 'localStorage.setItem("State", "Invisible");'
         . 'localStorage.setItem("Style", "alert alert-success");'
@@ -13,7 +19,8 @@
         . 'localStorage.setItem("Body", "El usuario de sesión fue encontrado");'
         . 'window.location.href = "http://localhost:8080/Proyecto_Graficas_III/Pagina_Principal.php";'
         . '</script>';
-    }else{
+    }
+    else{
         echo '<script type = "text/javascript">'
         . 'localStorage.setItem("State", "Visible");'
         . 'localStorage.setItem("Style", "alert alert-warning");'
