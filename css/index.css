@@ -105,9 +105,9 @@
     }
 
     .TituloJump{
-        font-family: 'Pulang';
-        src: url('recursos/fonts/Pulang.ttf') format('truetype');
-        font-size: 60px;
+        font-family: 'Chewy', cursive;
+        font-weight: 800;
+        font-size: 80px;
         animation: bounce 0.5s;
         animation-direction: alternate;
         animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);

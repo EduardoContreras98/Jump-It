@@ -20,7 +20,7 @@
         <script type="text/javascript" src="js/libs/three/three.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
         <script src="js/script_Loader.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
         <script src="css/bootstrap-5.1.3-dist/js/bootstrap.js"></script>

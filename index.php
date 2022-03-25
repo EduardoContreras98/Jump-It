@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="css/estilos_Ruleta.css">
         <link rel="stylesheet" href="css/bootstrap-5.1.3-dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos_Modal_Registro.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/script_Loader.js"></script>
         <script src="css/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
@@ -23,6 +26,8 @@
         <script src="js/script_hiddenModal.js"></script>
         <script src="js/script_Alerts.js"></script>
         <!--<script src="js/script_CursorDestellos.js"></script>-->
+
+        
     </head>
 
 
