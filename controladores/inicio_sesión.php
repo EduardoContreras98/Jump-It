@@ -10,6 +10,7 @@
     $Sesion = new DtoUsuario();
     $usuario = new Usuario('', $User, '', $Password);
     $Sesion->IniciarSesion($usuario);
+    
     if(!empty($usuario->getEmail())){
         $_SESSION['Usuario'] = $usuario->getUsuario();
         echo '<script type = "text/javascript">'
