@@ -117,7 +117,7 @@ function setupScene(){
 
     // Inicializamos la escena
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x123456);
+    //scene.background = new THREE.Color(0x123456);
     
     /*var loader = new THREE.TextureLoader();
     loader.load('img/background.jpg', function(texture){
