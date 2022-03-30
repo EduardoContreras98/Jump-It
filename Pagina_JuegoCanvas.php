@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/estilos_Loader.css">
         <link rel="stylesheet" href="css/estilos_Ruleta.css">
         <link rel="stylesheet" href="css/bootstrap-5.1.3-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos_Modal_Registro.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/libs/three/three.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +23,9 @@
         <script src="js/script_Loader.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
         <script src="css/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-        <script src="js/script_ValidadorContraseña.js"></script>
-        <script src="js/script_ValidadorCorreo.js"></script>
-        <script src="js/script_ValidadorUsuario.js"></script>
+        <script type="text/javascript" src="js/libs/three/MTLLoader.js"></script>
+	      <script type="text/javascript" src="js/libs/three/OBJLoader.js"></script>
+        <script type="text/javascript" src="js/libs/three/FBXLoades.js"></script>
         <script src="js/script_Canvas.js"></script>
         <script src="js/script_PopUps.js"></script>
         
