@@ -55,7 +55,7 @@
             </section>
 
             <section class="textos-header">
-                <h2 class="TituloJump">Jump It!</h2>
+                <h2 class="TituloJump">Jump It</h2>
                 <h3>El Universo En Tus Manos</h3>
                 <div class="botonesInicio">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesión</button>
