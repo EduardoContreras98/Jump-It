@@ -26,7 +26,7 @@
         <script type="text/javascript" src="js/libs/three/MTLLoader.js"></script>
 	      <script type="text/javascript" src="js/libs/three/OBJLoader.js"></script>
         <script type="text/javascript" src="js/libs/three/FBXLoades.js"></script>
-        <script src="js/script_Canvas.js"></script>
+        <script src="js/script_Canvas.js" type="module"></script>
         <script src="js/script_PopUps.js"></script>
         
     
