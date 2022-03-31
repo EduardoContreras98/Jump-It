@@ -1,6 +1,8 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js';
 
 import {FBXLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js';
+import {MTLLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/MTLLoader.js';
+import {OBJLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/OBJLoader.js';
 import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js';
 
@@ -33,9 +35,9 @@ class BasicCharacterController {
         new BasicCharacterControllerProxy(this._animations));
 
 
-    this._CargaModels(
+    this._CargaModels(//W
             './assets/guardia/', 'ModeloPrueba.fbx','Parado01', 'Happy Idle.fbx',
-            'Salto01','prueba_jump.fbx', new THREE.Vector3(0, 0, 5));    
+            'Salto01','prueba_jump.fbx', new THREE.Vector3(-30, 0, 10));    
     
     
             //this._LoadModels();
@@ -215,7 +217,7 @@ class BasicCharacterController02 {
   
       this._CargaModels(
               './assets/guardia/', 'ModeloPrueba.fbx','Parado02', 'Happy Idle.fbx',
-              'Salto02','prueba_jump.fbx', new THREE.Vector3(12, 0, -10));   
+              'Salto02','prueba_jump.fbx', new THREE.Vector3(-10, 0, 10));   
       
       
               //this._LoadModels();
@@ -395,7 +397,7 @@ class BasicCharacterController03 {
   
       this._CargaModels(
               './assets/guardia/', 'ModeloPrueba.fbx','Parado03', 'Happy Idle.fbx',
-              'Salto03','prueba_jump.fbx', new THREE.Vector3(-12, 0, -10));   
+              'Salto03','prueba_jump.fbx', new THREE.Vector3(10, 0, 10));   
       
     }
   
@@ -535,7 +537,7 @@ class BasicCharacterController04 {
   
       this._CargaModels(
               './assets/guardia/', 'ModeloPrueba.fbx','Parado04', 'Happy Idle.fbx',
-              'Salto04','prueba_jump.fbx', new THREE.Vector3(-20, 0, -10));   
+              'Salto04','prueba_jump.fbx', new THREE.Vector3(30, 0, 10));   
       
     }
   
@@ -1365,7 +1367,7 @@ class CharacterControllerDemo {
     const near = 1.0;
     const far = 1000.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(0, 20, 80);
+    this._camera.position.set(0, 10, 80);
 
     this._scene = new THREE.Scene();
 
@@ -1418,6 +1420,17 @@ class CharacterControllerDemo {
   ]); */
     texture.encoding = THREE.sRGBEncoding;
     this._scene.background = texture;
+
+    var mtlLoader = new MTLLoader();
+    mtlLoader.setPath('./assets/space/');
+    mtlLoader.load('Moon.mtl', (material) =>{
+        var objLoader = new OBJLoader();
+        objLoader.setPath('./assets/space/');
+        objLoader.setMaterials(material);
+        objLoader.load('Moon.obj', (planet) =>{
+            this._scene.add(planet);
+        });
+    });
 
     const plane = new THREE.Mesh(
         new THREE.PlaneGeometry(100, 100, 10, 10),
