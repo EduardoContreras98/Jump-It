@@ -5,6 +5,7 @@ import {MTLLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm
 import {OBJLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/OBJLoader.js';
 import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js';
+import {world} from './script_Canvas-World.js';
 
 
 class BasicCharacterControllerProxy {
@@ -1411,7 +1412,7 @@ class CharacterControllerDemo {
 
     light = new THREE.AmbientLight(0xFFFFFF, 0.25);
     this._scene.add(light);
-
+    this.world_ = new world.WorldManager({scene: this._scene});
     ///////////////////////////// Controles de mouse para ver el escenario
 
         /*
@@ -1550,6 +1551,8 @@ class CharacterControllerDemo {
     if (this._mixers) {
       this._mixers.map(m => m.update(timeElapsedS));
     }
+
+    this.world_.Update(timeElapsedS);
 
     if (this._controls) {
       this._controls.Update(timeElapsedS);
