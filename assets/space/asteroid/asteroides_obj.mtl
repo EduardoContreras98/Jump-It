@@ -1,0 +1,9 @@
+newmtl Asteroid_no_20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Ka Mat1_Base_Color.jpg
+map_Kd Mat1_Base_Color.jpg
+map_bump Mat1_Normal_DirectX.jpg
