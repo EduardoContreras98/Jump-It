@@ -1448,7 +1448,7 @@ class CharacterControllerDemo {
     const model2 = new BasicModel('./assets/space/afo/', 'flying Disk flying.obj', 'flying_Disk_flying.mtl');
     const model3 = new BasicModel('./assets/space/asteroid/', 'asteroides_obj.obj', 'asteroides_obj.mtl');
     const model4 = new BasicModel('./assets/space/mars/', 'mars.obj', 'mars.mtl');
-
+/*
     model1._loadObjWithMtl((luna) =>{
       luna.position.set(-200, 100, -100);
       luna.scale.set(0.2, 0.2, 0.2);
@@ -1471,7 +1471,7 @@ class CharacterControllerDemo {
       asteorides.scale.set(0.1, 0.1, 0.1);
       this._scene.add(asteorides);
     })
-
+*/
     model4._loadObjWithMtl((marte) =>{
       marte.position.set(-300, -200, -300);
       marte.scale.set(100, 100, 100);
