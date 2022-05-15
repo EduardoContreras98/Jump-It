@@ -29,13 +29,14 @@
         <script src="js/script_ValidadorUsuario.js"></script>
         <script src="js/script_CoolorsButton.js"></script>
         <script src="js/script_PopUps.js"></script>
+        <script src="js/script_Musica.js"></script>
        
         
     
     </head>
 
 
-    <body>
+    <body onload="LeerKeysElemento();">
 
     
     <?php  include ('./header.php')?>
@@ -62,13 +63,14 @@
                     </div>
                 </button>
 
+                <!-- Modal 
                 <button type="button" class="NotiCard" id="modo03" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
                   <div>
                     <h3 id="modo03-Titulo" > <img class="iconCard" src="recursos/imagenes/iconos/movie-play-solid-24.png" /> Unirte A Sala</h3>
                     <img src="recursos/imagenes/tipoJuego/03.jpg" class="d-block user-select-none" width="100%" height="200"/>
                     </div>
                 </button>
-
+-->
 
             </div>
 
@@ -178,19 +180,26 @@
 
               </div>
                 <div class="grupo">
-                <h4>Color de tu personaje</h4>
-                  <input type="text" name="" class="CoolorsAvatar" id="CoolorsAvatarMultijugador" required >
+                  <h4>Color de tu personaje</h4>
+                  <br>
+                  <button type="button" class="CoolorsButtonAvatar" id="CoolorsButtonAvatar" onclick="BotonJugadorMultiCoolors(this);">Jugador 1</button>
+                 <div id="groupColorsAvatarMultijugador">
+                    <input type="text" name="" class="CoolorsAvatar" value="#49408C" id="CoolorsAvatarMultijugador" required >
+                    <input type="text" name="" class="CoolorsAvatar" value="#0c3fb6" id="CoolorsAvatarMultijugador02" required >
+                    <input type="text" name="" class="CoolorsAvatar" value="#222" id="CoolorsAvatarMultijugador03" required >
+                    <input type="text" name="" class="CoolorsAvatar" value="#219e1a" id="CoolorsAvatarMultijugador04" required >
+                  </div>
                 </div>
                 <div class="grupo">
                     <div id="groupColors">
-                    <button type="button" class="coolorsJugador" id="coolors01" onclick="CoolorsButtonMultijugador(this);" style="background-color:#49408C;">coolors01</button>
-                      <button type="button" class="coolorsJugador" id="coolors02" onclick="CoolorsButtonMultijugador(this);" style="background-color:#0c3fb6;">coolors02</button>
-                      <button type="button" class="coolorsJugador" id="coolors03" onclick="CoolorsButtonMultijugador(this);" style="background-color:#222;">coolors03</button>
-                      <button type="button" class="coolorsJugador" id="coolors04" onclick="CoolorsButtonMultijugador(this);" style="background-color:#219e1a;">coolors04</button>
-                      <button type="button" class="coolorsJugador" id="coolors05" onclick="CoolorsButtonMultijugador(this);" style="background-color:#e0dd0b;">coolors05</button>
-                      <button type="button" class="coolorsJugador" id="coolors06" onclick="CoolorsButtonMultijugador(this);" style="background-color:#dc8200;">coolors06</button>
-                      <button type="button" class="coolorsJugador" id="coolors07" onclick="CoolorsButtonMultijugador(this);" style="background-color:#f97f7e;">coolors07</button>
-                      <button type="button" class="coolorsJugador" id="coolors08" onclick="CoolorsButtonMultijugador(this);" style="background-color:#be1010;">coolors08</button>
+                    <button type="button" class="coolorsJugador" id="coolors01" onclick="CoolorsButtonMultijugador(this);" value="#49408C" style="background-color:#49408C;">coolors01</button>
+                      <button type="button" class="coolorsJugador" id="coolors02" onclick="CoolorsButtonMultijugador(this);" value="#0c3fb6" style="background-color:#0c3fb6;">coolors02</button>
+                      <button type="button" class="coolorsJugador" id="coolors03" onclick="CoolorsButtonMultijugador(this);" value="#222" style="background-color:#222;">coolors03</button>
+                      <button type="button" class="coolorsJugador" id="coolors04" onclick="CoolorsButtonMultijugador(this);" value="#219e1a" style="background-color:#219e1a;">coolors04</button>
+                      <button type="button" class="coolorsJugador" id="coolors05" onclick="CoolorsButtonMultijugador(this);" value="#e0dd0b" style="background-color:#e0dd0b;">coolors05</button>
+                      <button type="button" class="coolorsJugador" id="coolors06" onclick="CoolorsButtonMultijugador(this);" value="#dc8200" style="background-color:#dc8200;">coolors06</button>
+                      <button type="button" class="coolorsJugador" id="coolors07" onclick="CoolorsButtonMultijugador(this);" value="#f97f7e" style="background-color:#f97f7e;">coolors07</button>
+                      <button type="button" class="coolorsJugador" id="coolors08" onclick="CoolorsButtonMultijugador(this);" value="#be1010" style="background-color:#be1010;">coolors08</button>
                     </div>
                     <br>
                 </div>

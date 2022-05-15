@@ -13,8 +13,15 @@
                 <h1>Configuración</h1>
                 <br>
                 <div class="grupo">
+                   <button type="button" onclick="cargaSonido('prueba');">↑</button>
+                   <button type="button" onclick="MusicaPlay(this);">▷</button>
+                   <button type="button" onclick="MusicaPause(this);">┃┃</button>
+                   <button type="button" onclick="MusicaReinicio(this);">↶</button>
+                   <button type="button" onclick="MusicaStop(this);">▢</button>
+                   <button type="button" onclick="eliminaSonido(this);">↓</button>
+                   <button type="button" onclick="MusicaCambio('a');">⇄</button>
                    <h4>Volumen</h4>
-                   <input type="range" name="rango">
+                   <input type="range" name="VolumenMusic" id="VolumenMusic"  min="0" max="1" step="0.01" value="1" onchange="Volumen(this);">
                 </div>
                 
                 <br> 
