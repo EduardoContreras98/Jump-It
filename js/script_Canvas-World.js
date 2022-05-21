@@ -13,7 +13,7 @@ export const world = (() => {
 
   class WorldObject {
     constructor(params) {
-      this.position = new THREE.Vector3();
+      this.position = new THREE.Vector3(0,0,-15);
       this.quaternion = new THREE.Quaternion();
       this.scale = 1.0;
       this.collider = new THREE.Box3();
@@ -30,7 +30,7 @@ export const world = (() => {
       const loader = new FBXLoader();
       loader.setPath('./assets/DesertPack/FBX/');
       loader.load('Cactus3.fbx', (fbx) => {
-        fbx.scale.setScalar(0.01);
+        fbx.scale.setScalar(2);
 
         this.mesh = fbx;
         this.params_.scene.add(this.mesh);
@@ -67,6 +67,7 @@ export const world = (() => {
       if (!this.mesh) {
         return;
       }
+      
       this.mesh.position.copy(this.position);
       this.mesh.quaternion.copy(this.quaternion);
       this.mesh.scale.setScalar(this.scale);
@@ -137,32 +138,8 @@ export const world = (() => {
 
     Update(timeElapsed) {
       this.MaybeSpawn_();
-      //this.UpdateColliders_(timeElapsed);
-      //this.UpdateScore_(timeElapsed);
-
-
-      const invisible = [];
-      const visible = [];
-
-      for (let obj of this.objects_) {
-        obj.position.x -= timeElapsed * this.speed_;
-
-        if (obj.position.x < -50) {
-          invisible.push(obj);
-          obj.mesh.visible = false;
-        } else {
-          visible.push(obj);
-        }
-
-        obj.Update(timeElapsed);
-      }
-
-      this.objects_ = visible;
-      this.unused_.push(...invisible);
-
-      /*
-      
-      } */
+      this.UpdateColliders_(timeElapsed);
+      this.UpdateScore_(timeElapsed);
     }
 
     UpdateScore_(timeElapsed) {

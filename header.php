@@ -6,7 +6,7 @@
 
         <header>
             <nav class="nav-menu">
-                <h2 class="TituloJump">Jump It!</h2>
+                <h2 class="TituloJump">Jump It! </h2>
                 <abbr title="Configuración" id="ConfiguracionModal"><a class="categoria" id="ConfiguracionCategoria"><img data-bs-toggle="modal" data-bs-target="#configuración" src="recursos/imagenes/iconos/cog-solid-24.png"/></a></abbr>
                 <b href="#" >|</b>
                 <a data-bs-toggle="modal" data-bs-target="#RuletaModal" class="btn-header">ඞ </a>

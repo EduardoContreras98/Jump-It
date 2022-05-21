@@ -75,6 +75,23 @@
         margin: 0 auto;
       }
 
+      #scoreDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: var(--white-AllOfMe);
+      }
+
+      #Score{
+        color: var(--white-AllOfMe);
+        margin: 10px;
+      }
+
+      #Highscore{
+        color: var(--white-AllOfMe);
+        margin: 10px;
+      }
 
 /* //////////////////////////////////////////////// MODALES MENUS */
 
@@ -87,6 +104,7 @@
   border-radius: 5px;
 
 }
+
 
 
      

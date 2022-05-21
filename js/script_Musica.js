@@ -3,7 +3,8 @@ var MusicEnum = [
     "prueba",
     "a",
     "b",
-    "c"
+    "c",
+    "guhhuh"
 ]
 
 
@@ -20,6 +21,8 @@ function UrlMusic(x) {
             return "recursos/musica/Le_Blues_de_Noel.mp3";
         case "c":
             return "recursos/musica/MalreDeszik's_Holiday_Funk_&_Blues.mp3";
+        case "guhhuh":
+            return "recursos/musica/BanjoGUHHUHSoundEffect.mp3"
     }
 
 }
@@ -124,6 +127,29 @@ function Volumen(x){
      GuardarKeysElemento("VolumenKey", volumen.value);
 }
 
+function VolumenEfect(x){
+
+    var musicEffect01 = document.getElementById('effectMusicJ1');
+    var musicEffect02 = document.getElementById('effectMusicJ2');
+    const volumen = document.getElementById('VolumenEfect');
+    var vol = 0;
+
+    var testDataMusic01 = !!document.getElementById("effectMusicJ1");
+    var testDataMusic02 = !!document.getElementById("effectMusicJ2");
+
+    volumen.oninput= (e) =>{
+        vol = volumen.value;
+        if (testDataMusic01 == true){
+            musicEffect01.volume =vol;
+            }
+        if (testDataMusic02 == true){
+            musicEffect02.volume =vol;
+        }
+    }
+
+     GuardarKeysElemento("VolumenEfectKey", volumen.value);
+}
+
 
 
 ////////////// GUARDADO LOCAL
@@ -151,7 +177,20 @@ function LeerKeysElemento(){
             vol = 1;
         }
 
-        return vol;
+
+    const VolumenEfect = document.getElementById('VolumenEfect');
+    var VolumenEfectKey = localStorage.getItem("VolumenEfectKey");
+    var VolEfect = 0;
+
+        if(volumen != null){
+
+            VolumenEfect.value = VolumenEfectKey;
+            VolEfect = VolumenEfectKey;
+        } else{
+
+            volumenMusic.value = 1;
+            VolEfect = 1;
+        }
 
 }
 
@@ -162,3 +201,5 @@ function EliminarKeysElemento(NombreKey){
 
 }
 
+
+  

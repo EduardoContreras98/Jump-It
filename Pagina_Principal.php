@@ -50,7 +50,7 @@
             <div class="noticiasCard">
                 <button type="button" class="NotiCard" id="modo01" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                   <div>
-                    <h3 id="modo01-Titulo" > <img class="iconCard" src="recursos/imagenes/iconos/movie-play-solid-24.png" /> Solo</h3>
+                    <h3 id="modo01-Titulo" > <img class="iconCard" src="recursos/imagenes/iconos/movie-play-solid-24.png" /> Cooperativo</h3>
                     <img src="recursos/imagenes/tipoJuego/01.jpg" class="d-block user-select-none" width="100%" height="200"/>
                     </div>
                 </button>
@@ -58,7 +58,7 @@
 
                 <button type="button" class="NotiCard" id="modo02" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
                   <div>
-                    <h3 id="modo02-Titulo" > <img class="iconCard" src="recursos/imagenes/iconos/movie-play-solid-24.png" /> Multijugador</h3>
+                    <h3 id="modo02-Titulo" > <img class="iconCard" src="recursos/imagenes/iconos/movie-play-solid-24.png" /> Competitivo</h3>
                     <img src="recursos/imagenes/tipoJuego/02.jpg" class="d-block user-select-none" width="100%" height="200"/>
                     </div>
                 </button>
@@ -87,8 +87,9 @@
       <div class="modal-body" id="modal-body2">
       <form action="Pagina_Principal.php" method="GET">
             <div class="form" id="form">
-                <h1>Modo Solo</h1>
+                <h1>Modo Cooperativo</h1>
                 <br>
+                <!--
                 <div class="grupo">
                 <h4>Color de tu personaje</h4>
                   <input type="text" name="" class="CoolorsAvatar" id="CoolorsAvatarSolo" required >
@@ -106,7 +107,7 @@
                     </div>
                     <br>
                 </div>
-
+                -->
                 <div class="grupo">
                  <br>
                  <h4>Escenario</h4>
@@ -115,16 +116,18 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                     <h5 class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel01">Mundo Espacioso</h5>
-                        <img src="recursos/imagenes/escenario/01.jpg" class="d-block w-100" alt="...">
+                        <img src="recursos/imagenes/escenario/MundoEspacioso.png" class="d-block w-100" alt="...">
                       </div>
                     <div class="carousel-item">
                     <h5  class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel02">Mundo Medieval</h5>
-                        <img src="recursos/imagenes/escenario/02.jpg" class="d-block w-100" alt="...">
+                        <img src="recursos/imagenes/escenario/MundoMedieval.png" class="d-block w-100" alt="...">
                     </div>
+                    <!--
                     <div class="carousel-item">
                     <h5  class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel03">Mundo Argg Pirata</h5>
                         <img src="recursos/imagenes/escenario/03.jpg" class="d-block w-100" alt="...">
                     </div>
+                    -->
                   </div>
                   <button class="carousel-control-prev" type="button" id="CarruselImgNext"data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -166,8 +169,9 @@
       <div class="modal-body" id="modal-body2">
       <form action="Pagina_Sala.php" method="GET">
             <div class="form" id="form">
-                <h1>Modo Multijugador</h1>
+                <h1>Modo Competitivo</h1>
                 <br>
+                <!--
                 <div class="grupo">
                 
                 <h4>Cantidad de Jugadores</h4>
@@ -190,6 +194,7 @@
                     <input type="text" name="" class="CoolorsAvatar" value="#219e1a" id="CoolorsAvatarMultijugador04" required >
                   </div>
                 </div>
+                
                 <div class="grupo">
                     <div id="groupColors">
                     <button type="button" class="coolorsJugador" id="coolors01" onclick="CoolorsButtonMultijugador(this);" value="#49408C" style="background-color:#49408C;">coolors01</button>
@@ -204,6 +209,7 @@
                     <br>
                 </div>
 
+                -->
                 <div class="grupo">
                  <br>
                  <h4>Escenario</h4>
@@ -212,16 +218,18 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                     <h5 class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel01">Mundo Espacioso</h5>
-                        <img src="recursos/imagenes/escenario/01.jpg" class="d-block w-100" alt="...">
+                        <img src="recursos/imagenes/escenario/MundoEspacioso.png" class="d-block w-100" alt="...">
                       </div>
                     <div class="carousel-item">
                     <h5  class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel02">Mundo Medieval</h5>
-                        <img src="recursos/imagenes/escenario/02.jpg" class="d-block w-100" alt="...">
+                        <img src="recursos/imagenes/escenario/MundoMedieval.png" class="d-block w-100" alt="...">
                     </div>
+                    <!--
                     <div class="carousel-item">
                     <h5  class="tituloEscenarioCarrusel" id="tituloEscenarioCarrusel03">Mundo Argg Pirata</h5>
                         <img src="recursos/imagenes/escenario/03.jpg" class="d-block w-100" alt="...">
                     </div>
+                    -->
                   </div>
                   <button class="carousel-control-prev" type="button" id="CarruselVideoPrev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon"   aria-hidden="true"></span>
@@ -236,7 +244,7 @@
 
               <div class="grupo">
                 
-                <h4>Dificultad de CPU</h4>
+                <h4>Dificultad de obstaculos</h4>
                 <select class="categorias-select" name="menuDificultad" id="menuDificultad"> 
                         <option selected>Fácil</option>
                         <option >DifÍcil</option>
@@ -430,6 +438,9 @@
 
             </section>
 
+            <audio src="recursos/musica/Shes_All_I_Wanna_Be-Tate_McRae.mp3" id="MusicGame" preload="auto" controls="none" loop="" style="display: none;"></audio>
+            <audio src="recursos/musica/BanjoGUHHUHSoundEffect.mp3" id="effectMusicJ1" preload="auto" controls="none" style="display: none;"></audio>
+            <audio src="recursos/musica/BanjoGUHHUHSoundEffect.mp3" id="effectMusicJ2" preload="auto" controls="none" style="display: none;"></audio>
 
         </main>
 
