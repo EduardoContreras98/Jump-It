@@ -72,7 +72,7 @@ const volumenMusic = document.getElementById('VolumenMusic');
 
 var TipoDeEscenario = 1;
 var ModoDeDificultad = 1;
-var TipoDeModo = 1;
+var TipoDeModo = 2;
 
 
 function RandomIntInRange (min, max) {
@@ -81,6 +81,18 @@ function RandomIntInRange (min, max) {
 
 ///////////////////////////////////// TIPO DE ESCENARIO
 
+function ConfigurarTipoDeModoEscenario(){
+
+  const TipoDeModoJuego = document.getElementById('TipoDeModoJuego');
+  const EscenarioTipo = document.getElementById('EscenarioTipo');
+  const DificultadTipo = document.getElementById('DificultadTipo');
+
+  ModoDeDificultad = TipoDeModoJuego.value;
+  TipoDeEscenario = EscenarioTipo.value;
+  TipoDeModo = DificultadTipo.value;
+
+
+}
 
 
 ///////////////////////////////////// JUMP AND BEND
@@ -1213,6 +1225,9 @@ class CharacterControllerDemo {
   }
 
   _Initialize() {
+
+    ConfigurarTipoDeModoEscenario();
+
     this._threejs = new THREE.WebGLRenderer({
       antialias: true,
     });
@@ -1674,6 +1689,17 @@ if(TipoDeEscenario == 1){
       this._controls02.Update(timeElapsedS);
     }
 
+     ////////////////////////// MODO VIDAS SPHERE
+
+     if (TipoDeModo == 2){
+      PowerUpSphereVidas01.position.x = 60;
+      PowerUpSphereVidas02.position.x = 60;
+      PowerUpSphereVidas03.position.x = 60;
+      contadorVidas = 3;
+    }
+
+    //////////////////////////// INICIO DEL JUEGO
+
     if (juegoPausa == false){
 
     GameSpeedLevel();
@@ -1709,14 +1735,7 @@ if(TipoDeEscenario == 1){
     var PowerUpSphereVidas03 = this._scene.getObjectByName("PowerUpSphereVidas03");
 
 
-    ////////////////////////// MODO VIDAS SPHERE
-
-    if (TipoDeModo == 2){
-      PowerUpSphereVidas01.position.x = 60;
-      PowerUpSphereVidas02.position.x = 60;
-      PowerUpSphereVidas03.position.x = 60;
-      contadorVidas = 3;
-    }
+   
 
     
 

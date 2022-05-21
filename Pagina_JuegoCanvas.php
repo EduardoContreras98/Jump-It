@@ -43,6 +43,7 @@
         <script src="js/script_Canvas_SpacePrueba.js" type="module"></script>
         <script src="js/script_PopUps.js"></script>
         <script src="js/script_Musica.js"></script>
+        <script src="js/script_ConfiguracionJuego.js"></script>
         
     
     </head>
@@ -52,7 +53,7 @@
 
     
     <?php  include ('./header_JuegoCanvas.php')?>
-    <body onload="LeerKeysElemento();">
+    <body onload="LeerKeysElemento();LeerKeysTipoDeJuego();">
       
 <main>
 
@@ -72,6 +73,10 @@
 </button>
 
 -->
+
+<input type="hidden" name="TipoDeModoJuego" id="TipoDeModoJuego" value="2" required>
+<input type="hidden" name="EscenarioTipo" id="EscenarioTipo" value="1" required>
+<input type="hidden" name="DificultadTipo" id="DificultadTipo" value="1" required>
 
             <section class="contenedor" id ="canvas">
                 
