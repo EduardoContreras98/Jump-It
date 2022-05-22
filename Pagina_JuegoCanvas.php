@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -44,6 +43,8 @@
         <script src="js/script_PopUps.js"></script>
         <script src="js/script_Musica.js"></script>
         <script src="js/script_ConfiguracionJuego.js"></script>
+        <script src="js/script_ApiFacebook.js"></script>
+        <script src="js/script_Puntuaciones.js"></script>
         
     
     </head>
@@ -111,7 +112,7 @@
         El juego esta en pausa, por lo pronto puedes descansar c:
       </div>
       <div class="modal-footer" id="modalCloseFooter">
-        <button type="button" class="btnModalMenu"> Pulsa ENTER para continuar</button>
+        <button type="button" id="btnModalMenu03"> Pulsa ENTER para continuar</button>
         <!--
         <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btnModalMenu" id="btnContinuar">Continuar</button>
         -->
@@ -135,7 +136,8 @@
         <h5 id="Puntuación"> 500</h5>
       </div>
       <div class="modal-footer" id="modalCloseFooter">
-      <button type="button" class="btnModalMenu"> Para volver a jugar presiona la tecla ENTER</button>
+      <button type="button" id="btnCompartirFacebook" onclick="CompartirScore();"> Compartir Puntuación <img src="recursos/imagenes/facebook_icon.png"/></button>
+      <button type="button" id="btnModalMenu"> Para volver a jugar presiona la tecla ENTER</button>
       </div>
     </div>
   </div>
@@ -154,9 +156,12 @@
           <h3 id="UsuarioGanadorLP"> AryMistery</h3>
         Tu puntuación es de:
         <h5 id="PuntuacionLugar"> 500</h5>
+        Escribe tu nombre para guardar tu puntuación
+        <input type="text" name="NombreGanadorHighscore" id="NombreGanadorHighscore" value=<?php echo $UsuarioActivo ?> onchange="CambioUsuario();" required>
       </div>
       <div class="modal-footer" id="modalCloseFooter">
-      <button type="button" class="btnModalMenu"> Para volver a jugar presiona la tecla ENTER</button>
+      <button type="button" id="btnCompartirFacebook" onclick="CompartirScoreHighscore();"> Compartir Puntuación <img src="recursos/imagenes/facebook_icon.png"/></button>
+      <button type="button" id="btnModalMenu02"> Para volver a jugar presiona la tecla ENTER</button>
       </div>
     </div>
   </div>

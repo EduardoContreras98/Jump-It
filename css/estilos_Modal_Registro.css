@@ -498,3 +498,75 @@ height: 3em;
     color:#49408C;
     cursor: pointer;
    }
+
+
+/* ////////////////////////////////////////// */
+
+
+#btnCompartirFacebook{
+    background: var(--blue-BamBam);        
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+
+#btnModalMenu{
+
+    background: var(--violet-Levitating);        
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+
+#btnModalMenu02{
+
+    background: var(--violet-Levitating);        
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+
+#btnModalMenu03{
+    background: var(--violet-Levitating);        
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+
+#PlayGameButton{
+
+    background: var(--violet-Levitating);        
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color:  var(--white-AllOfMe);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}

@@ -53,9 +53,11 @@ var LevelGameSpeed = 1;
 
 let score;
 let highscore;
+let highscore02;
 var contadorScore = 0;
 var ScoreID = document.getElementById('Score');
 var HighscoreID = document.getElementById('Highscore');
+var NombreHeaderUsuario = document.getElementById('NombreUsuarioHeaderCanvas');
 var juegoPausa = true;
 var alertPausa = false;
 var superoHighscore = false;
@@ -1606,10 +1608,17 @@ if(TipoDeEscenario == 1){
 
     score = 0;
     highscore = 0;
-    if (localStorage.getItem('highscore')) {
-       highscore = localStorage.getItem('highscore');
+    if (TipoDeModo == 1){
+    if (localStorage.getItem('highscore01')) {
+       highscore = localStorage.getItem('highscore01');
        HighscoreID.textContent = highscore;
     }
+  } else if (TipoDeModo == 2) {
+    if (localStorage.getItem('highscore02')) {
+      highscore = localStorage.getItem('highscore02');
+      HighscoreID.textContent = highscore;
+   }
+  }
 
     HighscoreID.textContent = highscore;
     ScoreID.textContent = score;
@@ -2117,7 +2126,8 @@ if(TipoDeEscenario == 1){
       juegoPausa = true;
 
     score = 0;
-    window.localStorage.setItem('highscore', highscore);
+    window.localStorage.setItem('highscore02', highscore);
+    window.localStorage.setItem('NombreUsuarioKey02',NombreHeaderUsuario.textContent);
     GameEndJ1 = false;
     contadorGameSpeed = 0;
     LevelGameSpeed = 1;
@@ -2170,7 +2180,8 @@ if(TipoDeEscenario == 1){
       juegoPausa = true;
 
     score = 0;
-    window.localStorage.setItem('highscore', highscore);
+    window.localStorage.setItem('highscore02', highscore);
+    window.localStorage.setItem('NombreUsuarioKey02',NombreHeaderUsuario.textContent);
     GameEndJ2 = false;
     contadorGameSpeed = 0;
     LevelGameSpeed = 1;
@@ -2235,7 +2246,9 @@ if(TipoDeEscenario == 1){
       juegoPausa = true;
 
     score = 0;
-    window.localStorage.setItem('highscore', highscore);
+    window.localStorage.setItem('highscore01', highscore);
+    window.localStorage.setItem('NombreUsuarioKey01',NombreHeaderUsuario.textContent);
+    
     GameEndCooperativo = false;
     contadorGameSpeed = 0;
     LevelGameSpeed = 1;

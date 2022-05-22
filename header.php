@@ -11,7 +11,7 @@
                 <b href="#" >|</b>
                 <a data-bs-toggle="modal" data-bs-target="#RuletaModal" class="btn-header">ඞ </a>
                 <b href="#" >|</b>
-                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="enlace-ModificarDatos" class="btn-header"><?php echo $UsuarioActivo ?></a>
+                <a href="#" id="enlace-ModificarDatos" class="btn-header"><?php echo $UsuarioActivo ?></a>
                 <b href="#" >|</b>
                 <abbr title="Cerrar Sesión" id="CerrarSesionModal"><a class="categoria" id="CerrarSesionCategoria"><img data-bs-toggle="modal" data-bs-target="#exampleModal" src="recursos/imagenes/iconos/x-circle-solid-24.png"/></a></abbr>
                 <br><br>
@@ -19,6 +19,7 @@
 
         </header>
 
+        <!-- <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="enlace-ModificarDatos" class="btn-header"> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

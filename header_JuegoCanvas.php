@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  $UsuarioActivo = $_SESSION['Usuario'];
+?>
+
+
+
 <div class="loader"></div>
 
         <header>
@@ -7,7 +14,7 @@
                 <b href="#" >|</b>
                 <a tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title=":c" data-bs-content="No puedes usar este botón hasta que termine tu partida." class="btn-header" >ඞ </a>
                 <b href="#" >|</b>
-                <a tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title=":c" data-bs-content="No puedes usar este botón hasta que termine tu partida." class="btn-header">AryMistery</a>
+                <a id="NombreUsuarioHeaderCanvas" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title=":c" data-bs-content="No puedes usar este botón hasta que termine tu partida." class="btn-header"><?php echo $UsuarioActivo ?></a>
                 <b href="#" >|</b>
                 <abbr title="Cerrar Sesión" id="CerrarSesionModal"><a class="categoria" id="CerrarSesionCategoria"><img tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title=":c" data-bs-content="No puedes usar este botón hasta que termine tu partida." src="recursos/imagenes/iconos/x-circle-solid-24.png"/></a></abbr>
                 <br><br>
