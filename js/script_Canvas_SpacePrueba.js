@@ -45,6 +45,8 @@ var contadorInvencibilidad02 = 0;
 var contadorHelp02 = 0;
 var contadorNoElegirPowerUp02 = 0;
 
+var InicioJuego = true;
+
 var inicialGameSpeed = 0.1;
 var contadorGameSpeed = 0;
 var LevelGameSpeed = 1;
@@ -87,9 +89,9 @@ function ConfigurarTipoDeModoEscenario(){
   const EscenarioTipo = document.getElementById('EscenarioTipo');
   const DificultadTipo = document.getElementById('DificultadTipo');
 
-  ModoDeDificultad = TipoDeModoJuego.value;
+  TipoDeModo = TipoDeModoJuego.value;
   TipoDeEscenario = EscenarioTipo.value;
-  TipoDeModo = DificultadTipo.value;
+  ModoDeDificultad = DificultadTipo.value;
 
 
 }
@@ -1691,11 +1693,20 @@ if(TipoDeEscenario == 1){
 
      ////////////////////////// MODO VIDAS SPHERE
 
+     var PowerUpSphereVidas01 = this._scene.getObjectByName("PowerUpSphereVidas01");
+     var PowerUpSphereVidas02 = this._scene.getObjectByName("PowerUpSphereVidas02");
+     var PowerUpSphereVidas03 = this._scene.getObjectByName("PowerUpSphereVidas03");
+     
      if (TipoDeModo == 2){
+
+      if( InicioJuego == true){
       PowerUpSphereVidas01.position.x = 60;
       PowerUpSphereVidas02.position.x = 60;
       PowerUpSphereVidas03.position.x = 60;
       contadorVidas = 3;
+      InicioJuego = false;
+
+      }
     }
 
     //////////////////////////// INICIO DEL JUEGO
@@ -1730,9 +1741,7 @@ if(TipoDeEscenario == 1){
     var PowerUpSphere02J2 = this._scene.getObjectByName("PowerUpSphere02J2");
     var PowerUpSphere03J2 = this._scene.getObjectByName("PowerUpSphere03J2");
 
-    var PowerUpSphereVidas01 = this._scene.getObjectByName("PowerUpSphereVidas01");
-    var PowerUpSphereVidas02 = this._scene.getObjectByName("PowerUpSphereVidas02");
-    var PowerUpSphereVidas03 = this._scene.getObjectByName("PowerUpSphereVidas03");
+
 
 
    
@@ -2130,6 +2139,7 @@ if(TipoDeEscenario == 1){
     contadorHelp02 = 0;
     contadorNoElegirPowerUp01=0;
     contadorNoElegirPowerUp02=0;
+    InicioJuego = true;
 
 
     const music = document.getElementById('MusicGame');
@@ -2182,6 +2192,7 @@ if(TipoDeEscenario == 1){
     contadorHelp02 = 0;
     contadorNoElegirPowerUp01=0;
     contadorNoElegirPowerUp02=0;
+    InicioJuego = true;
     const music = document.getElementById('MusicGame');
     music.pause();
       }

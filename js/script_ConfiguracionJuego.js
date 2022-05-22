@@ -8,6 +8,12 @@ function CargarDatosModoCooperativo(){
     var menuDificultadCooperativo = document.getElementById("menuDificultadCooperativo");
     var selectedDificultad = menuDificultadCooperativo.options[menuDificultadCooperativo.selectedIndex].text;
 
+    if (selectedDificultad == "Fácil"){
+        selectedDificultad = 1;
+    } else if (selectedDificultad == "DifÍcil"){
+        selectedDificultad = 2;
+    }
+
     GuardarKeysElementoDatosMenu("EscenarioModoCooperativoKey",EscenarioModoCooperativo);
     GuardarKeysElementoDatosMenu("menuDificultadCooperativoKey",selectedDificultad);
     GuardarKeysElementoDatosMenu("TipoDeJuegoKey","1");
@@ -21,6 +27,12 @@ function CargarDatosModoCompetitivo(){
 
     var menuDificultadCompetitivo = document.getElementById("menuDificultadCompetitivo");
     var selectedDificultad = menuDificultadCompetitivo.options[menuDificultadCompetitivo.selectedIndex].text;
+
+    if (selectedDificultad == "Fácil"){
+        selectedDificultad = 1;
+    } else if (selectedDificultad == "DifÍcil"){
+        selectedDificultad = 2;
+    }
 
     GuardarKeysElementoDatosMenu("EscenarioModoCompetitivoKey",EscenarioModoCompetitivo);
     GuardarKeysElementoDatosMenu("menuDificultadCompetitivoKey",selectedDificultad);

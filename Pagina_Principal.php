@@ -27,7 +27,6 @@
         <script src="js/script_ValidadorContraseña.js"></script>
         <script src="js/script_ValidadorCorreo.js"></script>
         <script src="js/script_ValidadorUsuario.js"></script>
-        <script src="js/script_CoolorsButton.js"></script>
         <script src="js/script_PopUps.js"></script>
         <script src="js/script_Musica.js"></script>
         <script src="js/script_ConfiguracionJuego.js"></script>
@@ -86,7 +85,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" id="modal-body2">
-      <form action="Pagina_Principal.php" method="GET">
+      <form>
             <div class="form" id="form">
                 <h1>Modo Cooperativo</h1>
                 <br>
@@ -158,7 +157,7 @@
                 
 
                 <br> 
-                <button type="submit" >Jugar</button>
+                <button type="button" onclick="CargarDatosModoCooperativo();">Jugar</button>
             </div>
         </form>      
 
@@ -179,7 +178,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" id="modal-body2">
-      <form action="Pagina_Sala.php" method="GET">
+      <form >
             <div class="form" id="form">
                 <h1>Modo Competitivo</h1>
                 <br>
@@ -271,7 +270,7 @@
                 
 
                 <br> 
-                <button type="submit" >Jugar</button>
+                <button type="button" onclick="CargarDatosModoCompetitivo();" >Jugar</button>
             </div>
         </form>      
 
