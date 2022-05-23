@@ -28,12 +28,20 @@
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">¿Quieres cerrar la sesión?</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
       </div>
       <div class="modal-body">
         Te vamos a extrañar :c
       </div>
       <div class="modal-footer" id="modalCloseFooter">
-        <button type="button" class="btn btn-primary" id="btnCerrarSesión"><a href="sesiones/cerrar_session.php">Cerrar Sesión</a></button>
+        <button type="button" class="btn btn-primary" name = "btnCerrarSesion"id="btnCerrarSesión"><a href="sesiones/cerrar_session.php">Cerrar Sesión</a></button>
+        <?php
+         If(isset($_POST["bntCerrarSesion"])){
+          $_SESSION['Usuario'] = NULL;
+          session_destroy();
+         } 
+
+        ?>
       </div>
     </div>
   </div>
