@@ -379,7 +379,7 @@
             
 
                  <br>
-                 <h4>Escenario</h4>
+                 <h4>Instrucciones</h4>
 
                  <div class="VideoFoto-Grupo">
                  
@@ -391,7 +391,7 @@
                     </div>
                     <div class="carousel-inner">
                        <div class="carousel-item active">
-                          <img src="recursos/imagenes/instrucciones/gatitu01.jpg" class="d-block w-100" alt="...">
+                          <img src="recursos/imagenes/instrucciones/Prueba.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                           <img src="recursos/imagenes/instrucciones/gatitu02.jpg" class="d-block w-100" alt="...">
