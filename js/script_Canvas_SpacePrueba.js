@@ -78,6 +78,8 @@ var TipoDeEscenario = 1;
 var ModoDeDificultad = 1;
 var TipoDeModo = 2;
 
+let stars, starGeo, star;
+
 
 function RandomIntInRange (min, max) {
   return Math.round(Math.random() * (max - min) + min);
@@ -88,12 +90,39 @@ function RandomIntInRange (min, max) {
 function ConfigurarTipoDeModoEscenario(){
 
   const TipoDeModoJuego = document.getElementById('TipoDeModoJuego');
-  const EscenarioTipo = document.getElementById('EscenarioTipo');
-  const DificultadTipo = document.getElementById('DificultadTipo');
+    const EscenarioTipo = document.getElementById('EscenarioTipo');
+    const DificultadTipo = document.getElementById('DificultadTipo');
 
-  TipoDeModo = TipoDeModoJuego.value;
-  TipoDeEscenario = EscenarioTipo.value;
-  ModoDeDificultad = DificultadTipo.value;
+    var TipoDeJuegoKey = localStorage.getItem("TipoDeJuegoKey");
+    let EscenarioModoKey;
+    let menuDificultadKey;
+
+    if(TipoDeJuegoKey != null){
+      if (TipoDeJuegoKey == 1){
+
+        EscenarioModoKey = localStorage.getItem("EscenarioModoCooperativoKey");
+        menuDificultadKey = localStorage.getItem("menuDificultadCooperativoKey");
+
+        TipoDeModo = TipoDeJuegoKey;
+        TipoDeEscenario = EscenarioModoKey;
+        ModoDeDificultad = menuDificultadKey;
+
+      } else if (TipoDeJuegoKey == 2){
+
+        EscenarioModoKey = localStorage.getItem("EscenarioModoCompetitivoKey");
+        menuDificultadKey = localStorage.getItem("menuDificultadCompetitivoKey");
+
+        TipoDeModo = TipoDeJuegoKey;
+        TipoDeEscenario = EscenarioModoKey;
+        ModoDeDificultad = menuDificultadKey;
+      }
+   } else{
+
+        TipoDeModo = 2;
+        TipoDeEscenario = 1;
+        ModoDeDificultad = 1;
+
+   }
 
 
 }
@@ -1230,7 +1259,7 @@ class CharacterControllerDemo {
 
   _Initialize() {
 
-    ConfigurarTipoDeModoEscenario();
+    
 
     this._threejs = new THREE.WebGLRenderer({
       antialias: true,
@@ -1564,6 +1593,10 @@ this._scene.add(PowerUpSphereVidas03);
 PowerUpSphereVidas03.name = "PowerUpSphereVidas03"
 
 
+ //////////////////////////////// PARTICULAS
+
+
+
 
 //this.world_ = new world.WorldManager({scene: this._scene});
 
@@ -1671,6 +1704,8 @@ if(TipoDeEscenario == 1){
       this._threejs.render(this._scene, this._camera);
       this._Render(t - this._previousRAF);
       this._previousRAF = t;
+
+      
     });
   }
 
@@ -1750,12 +1785,8 @@ if(TipoDeEscenario == 1){
     var PowerUpSphere02J2 = this._scene.getObjectByName("PowerUpSphere02J2");
     var PowerUpSphere03J2 = this._scene.getObjectByName("PowerUpSphere03J2");
 
-
-
-
-   
-
     
+
 
     ////////////////////////// OBSTACULO POSITION
 
@@ -2293,6 +2324,7 @@ if(TipoDeEscenario == 1){
 let _APP = null;
 
 window.addEventListener('DOMContentLoaded', () => {
+  ConfigurarTipoDeModoEscenario();
   _APP = new CharacterControllerDemo();
 });
 

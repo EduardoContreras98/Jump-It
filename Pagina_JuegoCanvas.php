@@ -75,9 +75,9 @@
 
 -->
 
-<input type="hidden" name="TipoDeModoJuego" id="TipoDeModoJuego" value="2" required>
-<input type="hidden" name="EscenarioTipo" id="EscenarioTipo" value="1" required>
-<input type="hidden" name="DificultadTipo" id="DificultadTipo" value="1" required>
+<input type="hidden" name="TipoDeModoJuego" id="TipoDeModoJuego"  required>
+<input type="hidden" name="EscenarioTipo" id="EscenarioTipo"  required>
+<input type="hidden" name="DificultadTipo" id="DificultadTipo"  required>
 
             <section class="contenedor" id ="canvas">
                 

@@ -82,3 +82,43 @@ function CambioUsuario(){
 
 }
 }
+
+
+function CargarTablaDePuntuaciones(){
+
+  const UsuarioHighscoreCooperativo = document.getElementById('UsuarioHighscoreCooperativo');
+  const ScoreHighscoreCooperativo = document.getElementById('ScoreHighscoreCooperativo');
+  const UsuarioHighscoreCompetitivo = document.getElementById('UsuarioHighscoreCompetitivo');
+  const ScoreHighscoreCompetitivo = document.getElementById('ScoreHighscoreCompetitivo');
+
+
+  var NombreUsuarioKey01 = localStorage.getItem("NombreUsuarioKey01");
+  var highscore01 = localStorage.getItem("highscore01");
+  var NombreUsuarioKey02 = localStorage.getItem("NombreUsuarioKey02");
+  var highscore02 = localStorage.getItem("highscore02");
+
+  if(highscore01 != null){
+
+    UsuarioHighscoreCooperativo.textContent = NombreUsuarioKey01;
+    ScoreHighscoreCooperativo.textContent = highscore01;
+} else{
+
+  UsuarioHighscoreCooperativo.textContent = "JugadorName"
+    ScoreHighscoreCooperativo.textContent = "0";
+
+}
+
+if(highscore02 != null){
+
+  UsuarioHighscoreCompetitivo.textContent = NombreUsuarioKey02;
+  ScoreHighscoreCompetitivo.textContent = highscore02;
+} else{
+
+  UsuarioHighscoreCompetitivo.textContent = "JugadorName"
+  ScoreHighscoreCompetitivo.textContent = "0";
+
+}
+
+
+
+}

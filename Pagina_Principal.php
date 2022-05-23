@@ -30,13 +30,14 @@
         <script src="js/script_PopUps.js"></script>
         <script src="js/script_Musica.js"></script>
         <script src="js/script_ConfiguracionJuego.js"></script>
+        <script src="js/script_Puntuaciones.js"></script>
        
         
     
     </head>
 
 
-    <body onload="LeerKeysElemento();">
+    <body onload="LeerKeysElemento();CargarTablaDePuntuaciones();">
 
     
     <?php  include ('./header.php')?>
@@ -336,42 +337,23 @@
       <div class="modal-dialog modal-dialog-scrollable modal-xl">
       <div class="modal-content">
        <div class="modal-header">
-        <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+        <h5 class="modal-title" id="staticBackdropLabel">MEJORES PUNTUACIONES</h5> 
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" id="modal-body2">
 
             <div class="form" id="Score">
-            <table class="table">
-              <thead>
-               <tr>
-                 <th scope="col">#</th>
-                 <th scope="col">Usuario</th>
-                 <th scope="col">Fecha</th>
-                 <th scope="col">Puntuación</th>
-                </tr>
-             </thead>
-             <tbody>
-                 <tr>
-                   <th scope="row">1</th>
-                   <td>Mark</td>
-                   <td>Otto</td>
-                   <td>@mdo</td>
-                </tr>
-                <tr>
-                   <th scope="row">2</th>
-                   <td>Jacob</td>
-                   <td>Thornton</td>
-                   <td>@fat</td>
-                </tr>
-               <tr>
-                   <th scope="row">3</th>
-                   <td>Larry</td>
-                   <td>the Bird</td>
-                   <td>@twitter</td>
-               </tr>
-              </tbody>
-             </table>
+            
+
+            Modo Cooperativo 
+            <h3 id="UsuarioHighscoreCooperativo"> AryMistery</h3>
+            <h3 id="ScoreHighscoreCooperativo"> 0</h3>
+
+            Modo Competitivo
+            <h3 id="UsuarioHighscoreCompetitivo"> AryMistery </h3>
+            <h3 id="ScoreHighscoreCompetitivo"> 0</h3>
+            
+
 
                 <br> 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" >OK</button>
