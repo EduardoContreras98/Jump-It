@@ -18,7 +18,7 @@
         . 'localStorage.setItem("Style", "alert alert-success");'
         . 'localStorage.setItem("Head", "Inicio de sesión correcto");'
         . 'localStorage.setItem("Body", "El usuario de sesión fue encontrado");'
-        . 'window.location.href = "http://localhost:8080/Proyecto_Graficas_III/Pagina_Principal.php";'
+        . 'window.location.href = "http://localhost//graficasRepo//Jump-it/Pagina_Principal.php";'
         . '</script>';
     }
     else{
@@ -27,7 +27,7 @@
         . 'localStorage.setItem("Style", "alert alert-warning");'
         . 'localStorage.setItem("Head", "Error en el inicio de sesión");'
         . 'localStorage.setItem("Body", "El usuario no fue encontrado, revise los datos proporcionados");'
-        . 'window.location.href = "http://localhost:8080/Proyecto_Graficas_III/index.php";'
+        . 'window.location.href = "http://localhost//graficasRepo//Jump-it/index.php";'
         . '</script>';
     }
 

@@ -24,28 +24,28 @@
 
 
     <body>
-        <form action="Pagina_Principal.php" method="GET" id="form">
+    <form action="Pagina_Principal.php" method="GET" id="form">
             <div class="form">
                 <h1>Modificar Datos</h1>
                 <br>
                 <div class="grupo">
-                    <input type="text" name="" id="correo" required><span class="barra"></span>
+                    <input type="text" name="correo" id="correo" required><span class="barra"></span>
                     <label class="datos-form" for="">Correo Electronico</label>
                 </div>
                 <br>
                 <div class="grupo">
-                    <input type="text" name="" id="usuario" title="El usuario debe de ser de minimo 9 a maximo 15 caracteres que solo contengan letras y numeros" required><span class="barra"></span>
+                    <input type="text" name="usuario" id="usuario" title="El usuario debe de ser de minimo 9 a maximo 15 caracteres que solo contengan letras y numeros" required><span class="barra"></span>
                     <label class="datos-form" for="">Usuario</label>
                 </div>
                 <br>
                 <div class="grupo">
-                    <input type="text" name="" id="contraseña"  title= "La contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco" onclick="ContraseñaOnclick()" required>
+                    <input type="text" name="contraseña" id="contraseña"  title= "La contraseña debe de tener: 8 caracteres, 1 numero, 1 mayuscula, 1 caracter especial (¡”#$%&/=’?¡¿:;,.-_+*{][}) y sin espacios en blanco" onclick="ContraseñaOnclick()" required>
                     <span class="barra"></span>
                     <label class="datos-form" for="">Contraseña</label>
                 </div>
                 <br>
                 <div class="grupo">
-                    <input type="text" name="" id="confirmarcontraseña" required>
+                    <input type="text" name="confirmar" id="confirmarcontraseña" required>
                     <span class="barra"></span>
                     <label class="datos-form" for="">Confirmar Contraseña</label>
                 </div>
